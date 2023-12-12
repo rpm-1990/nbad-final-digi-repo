@@ -5,7 +5,7 @@ import { Link }  from "react-router-dom";
 function Menu() {
   const handleLoginClick = () => {
     // Make an HTTP POST request to the server when the Login button is clicked
-    fetch('http://localhost:3000/login', {
+    fetch('http://68.183.24.210:3000/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
