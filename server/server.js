@@ -24,13 +24,6 @@ app.use(cors());
 
 // Create MySQL database connection
 const db = mysql.createConnection({
-  host            : 'localhost',
-  user            : 'root',
-  password        : 'root',
-  database        : 'library'
-});
-var pool  = mysql.createPool({
-  connectionLimit : 10,
   host: 'sql5.freemysqlhosting.net',
   user: 'sql5668868',
   password: 'ZkTjqqbexB',
@@ -47,8 +40,8 @@ db.connect((err) => {
       db.connect();
     }, 5000); // Retry after 5 seconds
   } else {
-    console.log('Connected to the MySQL database');
-  }
+  console.log('Connected to the MySQL database');
+}
 });
 
 
@@ -239,4 +232,3 @@ app.delete('/delete-budget/:id', (req, res) => {
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
-
