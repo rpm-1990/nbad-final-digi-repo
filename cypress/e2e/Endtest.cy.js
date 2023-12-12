@@ -8,7 +8,7 @@ describe('Signup Page', () => {
 
   it('allows user signup and performs visual regression testing', () => {
     // Fill out the signup form
-    cy.get('input[name="username"]').type('user123');
+    cy.get('input[name="username"]').type('testinguser5');
     cy.get('input[name="email"]').type('test@example.com');
     cy.get('input[name="password"]').type('testpassword');
 
