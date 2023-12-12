@@ -24,7 +24,7 @@ import Footer from './components/Footer/Footer';
 import Hero from './components/Hero/Hero';
 import ManageBudget from './Pages/ManageBudget/ManageBudget';
 
-require('dotenv').config();
+//require('dotenv').config();
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
