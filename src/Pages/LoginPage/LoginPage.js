@@ -19,7 +19,7 @@ function LoginPage() {
     event.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:3000/login', loginData);
+      const response = await axios.post('http://localhost:3001/login', loginData);
 
       // Handle successful login (redirect, store tokens, etc.)
       console.log('Login successful!', response.data);
