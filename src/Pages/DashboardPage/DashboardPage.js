@@ -256,28 +256,6 @@ function DashboardPage({ setIsLoggedIn}) {
     });
 };
 
-
-  /*const getBudgetFromDatabase = () => {
-    axios.get('http://localhost:3000/budget')
-      .then(response => {
-        const budgetData = response.data.Budget;
-  
-        const updatedDatasource = {
-          datasets: [{
-            data: budgetData.map(item => item.amount),
-            backgroundColor: ['#ffcd56', '#ff0000', '#0000ff', '#4d5791', '#a52a2a', '#8a2be2', '#ffebcd'],
-          }],
-          labels: budgetData.map(item => item.description || 'No Description'), // Use description as labels
-        };
-  
-        setDatasource(updatedDatasource);
-      })
-      .catch(error => {
-        console.error('Error fetching budget data:', error);
-        // Handle error fetching budget data
-      });
-  };*/
-
   // Function to initialize the chart and D3 graph
   const initializeVisualizations = () => {
     createChart();
