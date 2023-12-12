@@ -4,6 +4,7 @@ const mysql = require('mysql2');
 const bodyParser = require('body-parser');
 const jwt = require('jsonwebtoken');
 const crypto = require('crypto');
+const compression = require('compression');
 //require('dotenv').config(); // Load environment variables from .env file
 
 const app = express();
@@ -21,6 +22,7 @@ function generateJWTSecretKey() {
 // Middleware
 app.use(bodyParser.json());
 app.use(cors());
+app.use(compression());
 
 // Create MySQL database connection
 const db = mysql.createConnection({
