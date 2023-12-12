@@ -6,7 +6,13 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
   },
+
+  component: {
+    devServer: {
+      framework: "create-react-app",
+      bundler: "webpack",
+    },
+  },
 });
 
-
-require('@applitools/eyes-cypress')(module);
+require("@applitools/eyes-cypress")(module);
