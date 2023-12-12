@@ -20,7 +20,7 @@ function SignupPage() {
     event.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:3001/register', userData);
+      const response = await axios.post('http://localhost:3000/register', userData);
       console.log('User registered successfully!', response.data);
       setUserData({
         username: '',
