@@ -5,6 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 ## E2E testing script
+### `npx cypress open`
 In the budget app to run the E2E test use the command npx cypress open in the folder
 In the project directory, you can run:
 
