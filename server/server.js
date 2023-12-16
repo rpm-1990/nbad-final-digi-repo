@@ -8,7 +8,7 @@ const compression = require('compression');
 //require('dotenv').config(); // Load environment variables from .env file
 
 const app = express();
-const port = 3000;
+const port = 3001;
 //const JWT_SECRET = process.env.JWT_SECRET; // Access the secret key from environment variables
 
 // Generate JWT Secret Key using crypto module
